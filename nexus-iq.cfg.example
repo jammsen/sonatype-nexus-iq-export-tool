@@ -1,0 +1,24 @@
+# Nexus IQ Export Tool - Configuration
+#
+# Copy this file to nexus-iq.cfg and fill in your values.
+# The nexus-iq.cfg file should NEVER be committed to version control.
+#
+# Config file locations (checked in order):
+#   1. ./nexus-iq.cfg          (next to the script - recommended)
+#   2. ~/.nexus-iq.cfg         (user home directory)
+
+# ----------------------------------------------------------
+# Self-hosted Nexus IQ Server example
+# ----------------------------------------------------------
+NEXUS_IQ_URL=https://your-nexusiq-host.example.com
+NEXUS_IQ_USER=admin
+NEXUS_IQ_TOKEN=your-token-here
+
+# ----------------------------------------------------------
+# Sonatype Cloud (*.sonatype.app) example
+# The /platform path prefix is added automatically when the
+# URL matches *.sonatype.app
+# ----------------------------------------------------------
+# NEXUS_IQ_URL=https://your-tenant.sonatype.app
+# NEXUS_IQ_USER=admin
+# NEXUS_IQ_TOKEN=your-token-here
